@@ -12,29 +12,36 @@ Vamos fazer a parte do back-And
 e também questao de aspas sempre utilizar a que foi iniciada ou melhor usar sempre a mesma.
 
 pass = passar
+
+Utilizamos aspas tripas para textos grandes, com varias linhas.
+
 """
 
-import os 
+import os # as nome_qualquer voce escolhe um nome para chamar esse function
 
 """ Dicionarios
 
 Aqui diferente da lista usamos chave e valor como voce pode ver a baixo.
 Podendo ter um poder maior sobre nossos restaurantes.
 """
-restaurantes = [{'nome': 'japanHouse', 'categoria' : 'Japonesa', 'ativo': False}, # true or false são valores boleanos
+restaurantes = [{'nome': 'japanHouse', 'categoria': 'Japonesa', 'ativo': False}, # true or false são valores boleanos
                 {'nome': 'Pizza Suprema', 'categoria': 'Italiana', 'ativo': True},
                 {'nome': 'Cantina', 'categoria': 'Italiana', 'ativo': False}]
 
 def volta_ao_menu():
     input('\nDigite uma tecla para voltar ao menu')
     main()
+    
 def finalizar_app(): # "def" serve para criar um função
     exibir_subtitulo('Encerrando programa...\n') # limpa o terminal caso caia para essa function
+
 def exibir_subtitulo(texto):
     os.system('cls')
     print(texto)
+
 def opcao_invalida():
     print('Opção Inválida...\n')
+    input('PRESS ENTER TO RETURN')
     volta_ao_menu()
 
 def exibir_nome_do_programa():
@@ -71,7 +78,6 @@ def cadastrar_nova_restaurante():
     print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso!')
     volta_ao_menu()
 
-    pass    
 def listar_restaurantes():
     exibir_subtitulo('Aqui esta a lista de restaurantes:\n')
 
@@ -82,7 +88,6 @@ def listar_restaurantes():
         print(f'-{nome_restaurante} | {categoria_restaurante} | {restaurante_ativo}')
 
     volta_ao_menu()
-
 
 """ NOT
 
@@ -97,6 +102,13 @@ resultado: True
 
 EX: mensagem = f'O restaurante foi {nome_restaurante} foi ativado com sucesso' if buscando['ativo'] else f'O restaurante {nome_restaurante} foi desativado com sucesso'
         print(mensagem)
+"""
+
+""" MATCH OU IF
+O 'IF' nos proporciona uma maneira eficaz de tomar decisões simples ou complexas em nosso código, 
+adaptando o comportamento do programa de acordo com as circunstâncias determinadas. Ao usar 'MATCH', 
+podemos simplificar a lógica do código em situações que envolvem múltiplos padrões complexos. 
+Ela oferece uma estrutura mais legível, especialmente quando temos diversos casos a serem tratados.
 """
 def alterar_estado_restaurante():
     exibir_subtitulo('Aternando estado do restaurante')
