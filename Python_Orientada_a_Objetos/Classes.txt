@@ -1,0 +1,18 @@
+Em programação orientada a objetos (OO), uma classe é um modelo para criar objetos. Um objeto é uma instância específica de uma classe, e as classes são utilizadas para definir o comportamento e as propriedades compartilhadas por um grupo de objetos relacionados.
+
+Por exemplo, uma classe Música poderia ter 3 atributos (que trazem as características ou propriedades de um objeto):
+
+nome
+artista
+duracao
+
+Agora é sua vez! Crie uma classe chamada Musica com os seguintes atributos e crie 3 objetos definindo cada atributo..
+
+PARA MIM 
+Classe seria algo que tem objetos ou melhor caracteristicas que definem essa classe, como no exemplo a cima.
+
+
+Resumindo:
+
+Classe: Define a estrutura e o comportamento comum a todos os objetos do mesmo tipo.
+self: Permite que os métodos da classe acessem e modifiquem os atributos da instância à qual pertencem.

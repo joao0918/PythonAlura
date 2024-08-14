@@ -37,7 +37,11 @@ def finalizar_app(): # "def" serve para criar um função
 
 def exibir_subtitulo(texto):
     os.system('cls')
+    linha = '*' * len(texto)
+    print(linha)
     print(texto)
+    print(linha)
+    print()
 
 def opcao_invalida():
     print('Opção Inválida...\n')
@@ -57,7 +61,7 @@ def exibir_nome_do_programa():
 def exibir_opcoes(): # ctrl + "{" = jogar para o lado direito
     print('1. Cadastrar restaurante')
     print('2. Listar restaurante')
-    print('3. Ativar restaurante')
+    print('3. Alternar estado do resturante')
     print('4. Sair\n')
 
 """ LISTA
@@ -78,14 +82,15 @@ def cadastrar_nova_restaurante():
     print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso!')
     volta_ao_menu()
 
+print(f'{'Nome do Restaurante'.ljust(20)} | {'Categoria'.ljust(20)} | Status')
 def listar_restaurantes():
     exibir_subtitulo('Aqui esta a lista de restaurantes:\n')
 
     for restaurante in restaurantes:
         nome_restaurante = restaurante['nome']
         categoria_restaurante = restaurante['categoria']
-        restaurante_ativo = restaurante['ativo']
-        print(f'-{nome_restaurante} | {categoria_restaurante} | {restaurante_ativo}')
+        ativo = 'ativado' if restaurante['ativo'] else 'desativado'
+        print(f'-{nome_restaurante.ljust(20)} | {categoria_restaurante.ljust(20)} | {ativo}')
 
     volta_ao_menu()
 
@@ -164,7 +169,6 @@ def escolher_opcoes():
     
     except: # caso nao de
         opcao_invalida()
-
 
 """ FUNÇÃO
 
