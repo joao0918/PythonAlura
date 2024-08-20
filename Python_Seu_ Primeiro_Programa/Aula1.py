@@ -45,7 +45,6 @@ def exibir_subtitulo(texto):
 
 def opcao_invalida():
     print('Opção Inválida...\n')
-    input('PRESS ENTER TO RETURN')
     volta_ao_menu()
 
 def exibir_nome_do_programa():
