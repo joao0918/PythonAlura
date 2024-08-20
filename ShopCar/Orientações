@@ -1,0 +1,35 @@
+"""
+App ShopCar
+
+Orientações:
+    - Todos carros entram com estado de "A venda"
+    - Carros necessitam que todos os dados semjam preeenchidos para venda(caso não seja, os dados não serão salvos isso devera ser informado)
+    - Na listagem devem sem listados pela marca em ordem alfabetica e pelo ano do carro da determinada marca, na orientação do mais velho p/ mais novo
+
+Funções atribuidas a ele:
+- adcionar carros novos:
+    1. Marca
+    2. Ano
+    3. Valor
+    4. kms rodados pelo veiculo
+
+- Listar carros:
+    1. Marca
+    2. Ano
+    3. Valor
+    4. kms rodados pelo veiculo
+    5. Status(A venda, Vendido e Em negociação)
+- Carros a venda:
+    1. Marca
+    2. Ano
+    3. Valor
+    4. kms rodados pelo veiculo
+    5. Status(A venda e Em negociação)
+- Mudar estado do carro:
+    1. A venda
+    2. vendido
+    3. Em negociação
+
+- Sair
+    Finaliza o app
+"""
